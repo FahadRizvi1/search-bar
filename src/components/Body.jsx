@@ -18,12 +18,12 @@ const Body = () => {
     setIsShown(false);
     setDisplay(false);
   }
-  const search = event => { 
-    event.preventDefault();
-    setIsShown(false);
-    setDisplay(!isDisplay);
+  // const search = event => { 
+  //   event.preventDefault();
+  //   setIsShown(false);
+  //   setDisplay(!isDisplay);
     
-  }
+  // }
     
 
 
@@ -35,7 +35,7 @@ const Body = () => {
 
       <div className='form'>
         <input type="text" placeholder="Search..." name='message' onClick={handleClick} onBlur={invisible}></input>   
-        <button type="submit" className= "fa fa-search" onClick={search} ></button>
+        <button type="submit" className= "fa fa-search" onClick={handleClick} onBlur={invisible} ></button>
       </div>
       {isShown && <Results />}
       {/* {isDisplay && <P2 />} */}
