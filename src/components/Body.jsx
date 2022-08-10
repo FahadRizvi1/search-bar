@@ -5,7 +5,7 @@ import Results  from '../components/Results';
 
 const Body = () => {
  
-  const [ isDisplay, setDisplay ] = useState(false);
+  const [ setDisplay ] = useState(false);
   const [ isShown, setIsShown ] = useState(false);
   
   const handleClick = event => {
