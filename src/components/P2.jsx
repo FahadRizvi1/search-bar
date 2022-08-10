@@ -3,7 +3,8 @@ import '../p2.scss';
 
 const P2 = () => {
 
-    const cImage = faker.image.fashion(280,250);
+  const cImage = faker.image.fashion(280,250);
+  
   return (
 
     <div className='container'>

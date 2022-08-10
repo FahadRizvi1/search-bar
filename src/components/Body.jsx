@@ -1,7 +1,7 @@
 import {React, useState} from 'react';
 import '../style.scss';
 import Results  from '../components/Results';
-import P2 from './P2';
+//import P2 from './P2';
 
 const Body = () => {
  
@@ -38,7 +38,7 @@ const Body = () => {
         <button type="submit" className= "fa fa-search" onClick={search} ></button>
       </div>
       {isShown && <Results />}
-      {isDisplay && <P2 />}
+      {/* {isDisplay && <P2 />} */}
     </div>
   );
 }
